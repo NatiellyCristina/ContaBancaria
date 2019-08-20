@@ -1,10 +1,6 @@
 <?php
 
-
-echo"<p><a href=\"exercicio1.php\"> Cadastros de Usuarios</a> | 
-<a href=\"listar1.php\"> lista de Tabelas</a>
-
-<p> ";
+include("cabecalho.php");
 include("ClassePessoa.php");
 
 
