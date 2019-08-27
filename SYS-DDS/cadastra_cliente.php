@@ -12,6 +12,6 @@ session_start();
 $_SESSION['cliente'][] = $c;
 
 echo"Cliente cadastrado(a) com sucesso";
-$c->exibe();
+$c->exibe_pessoa();
  
 ?>

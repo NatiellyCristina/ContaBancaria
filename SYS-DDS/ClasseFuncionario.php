@@ -3,10 +3,20 @@
 include("ClasseCliente.php");
 class  funcionario extends cliente{
 
+        public $cpf;
+        public $nome;
+        public $email;
+        public $sexo;
+        public $dataNasc;
+        public $endereco;
+        public $cidade;
+        public $estado;
+        public $pais;
         public $area;
         public $salario;
         public $turno;
 
+        
         function __construct($vetor)
         {
             parent::__construct($vetor);

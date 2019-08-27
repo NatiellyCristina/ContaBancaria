@@ -3,9 +3,7 @@
 include("cabecalho.php");
 include("ClasseGerente.php");
 
-
-
-$g = new gerente($_POST);
+    $g = new gerente($_POST);
 
 session_start();
 

@@ -2,15 +2,15 @@
 
 class cliente{
 
-public $cpf;
-public $nome;
-public $email;
-public $sexo;
-public $dataNasc;
-public $endereco;
-public $cidade;
-public $estado;
-public $pais;
+    public $cpf;
+    public $nome;
+    public $email;
+    public $sexo;
+    public $dataNasc;
+    public $endereco;
+    public $cidade;
+    public $estado;
+    public $pais;
 
         function __construct($vetor)
         {
@@ -24,7 +24,7 @@ public $pais;
             $this->estado = $vetor["estado"];
             $this->pais = $vetor["pais"];
         }
-        function exibe()
+        function exibe_pessoa()
         {
             echo"<fieldset>
                 <div>
@@ -66,7 +66,7 @@ public $pais;
             </fieldset>
             ";
         }
-        function exibeTR()
+        function exibePessoaTR()
         {
             
             echo "
@@ -80,7 +80,14 @@ public $pais;
                 <td>".$this->cidade."</td>
                 <td>".$this->estado."</td>
                 <td>".$this->pais."</td>
-                </tr>";
+                ";
+        }
+
+        function exibeTR()
+        {
+         
+            $this->exibePessoaTR();
+            echo " </tr>";
         }
     
 

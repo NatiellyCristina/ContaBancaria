@@ -26,7 +26,7 @@
                 foreach($_SESSION["cliente"] as $i=>$c)
                 {
                 
-                    $c->exibePessoaTR();
+                    $c->exibeTR();
 
                 }
                 ?>

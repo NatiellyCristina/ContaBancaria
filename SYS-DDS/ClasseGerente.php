@@ -2,7 +2,16 @@
 
 include("ClasseCliente.php");
 class gerente extends cliente{
-
+  
+        public $cpf;
+        public $nome;
+        public $email;
+        public $sexo;
+        public $dataNasc;
+        public $endereco;
+        public $cidade;
+        public $estado;
+        public $pais;
         public $area;
         public $salario;
         

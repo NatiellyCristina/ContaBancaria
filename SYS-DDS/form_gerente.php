@@ -14,6 +14,11 @@
     <fieldset>
         <legend>Cadastro de Gerentes</legend>
         <p>
+        
+        ";
+            include("form_pessoas.php");
+     echo
+     "
             <label>Área:</label>
             <input type=\"text\" name=\"area\" size=\"30\" />
         </p>
@@ -23,7 +28,9 @@
         </p>
     
         <input type=\"submit\" value=\"Cadastrar\"/>
-         </fieldst>
+         </fieldset>
          </form>
 ";
     }
+
+    ?>
