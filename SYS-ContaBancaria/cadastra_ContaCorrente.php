@@ -19,6 +19,6 @@
 
 
 ?>
-<input name="tipo" type="hidden" id="tipo" value="<? echo $tipo; ?>">
+
 
  

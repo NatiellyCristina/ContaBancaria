@@ -13,25 +13,27 @@
         session_start();
         foreach($_SESSION['conta'] as $i=>$c)
         {
+            
             $get_nroConta =  $c->get_nroConta();
+           
             if($nroConta ==  $get_nroConta ){
                 if($operacao == 'saque')
                 {
+                    echo"Saque realizado com sucesso";
                     $c->sacar($valor);
                 }
                 else if($operacao == 'deposito')
                 {
+                    echo"depósito realizado com sucesso";
                     $c->depositar($valor);
 
-                }else{
-                    echo"Operação Indisponível";
                 }
 
                 
             }
         
         }
-        echo"Operação  cadastrada com sucesso";
+        
         
 
 ?>

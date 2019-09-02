@@ -78,12 +78,11 @@
                     
                     echo "
                     <tr>
-                        <td>".$this->nome."</td>
+                        <td>"."<a href='operar_conta.php?nroConta=".$this->nroConta."'/>".$this->nome."</td>
                         <td>".$this->nroConta."</td>
                         <td>".$this->saldo."</td>
                     ";
                 }
-
     }
 
 

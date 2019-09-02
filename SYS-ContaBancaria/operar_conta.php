@@ -16,7 +16,7 @@
         if(empty($_POST)){
         ?>
             <form action="cadastra_operacao.php" method="POST"> 
-                <input type="number" name="nroConta" placeholder="<?php echo $nroConta;?>"/><br />
+                <input type="number" name="nroConta" placeholder="Numero da conta..." value="<?php echo $nroConta;?>" /><br />
                 <input type="number" name="valor" placeholder="valor..."/><br />    
                 <select name="operacao">
                     <option value="saque">Saque</option>
